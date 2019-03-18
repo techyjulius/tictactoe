@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import './App.css';
 
-class App extends Component {
+class Tile extends Component {
     render() {
         return '';
     }
 }
 
-export default App;
+export default Tile;
