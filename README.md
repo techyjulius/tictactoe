@@ -9,4 +9,4 @@ Tic Tac Toe game built using react.
 - Run `npm start` to launch this app on your local environment
 
 Note: No state manangement package or 'react contexts and hooks' were used in this project because this was a small project which to my judgement state could be managed without use of any of those.
-However, I will be adding 
+However, I will be adding redux later to demonstrate how redux can be used in this project.
