@@ -1,0 +1,35 @@
+@import "../../constants/app-constants";
+
+@keyframes win {
+  0%   {font-size: 70px;}
+  25%  {font-size: 85px;}
+  50%  {font-size: 100px;}
+  75%  {font-size: 85px;}
+  100% {font-size: 70px;}
+}
+
+.tile {
+  width: 130px;
+  height: 130px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: #909090 solid 2px;
+  font-size: 70px;
+  cursor: pointer;
+
+  &.tile--color-two-text {
+    color: $color-two;;
+  }
+
+  &.tile--color-one-text {
+    color: $color-one;
+  }
+
+  &.tile--is-winning {
+    animation-name: win;
+    animation-duration: 400ms;
+    animation-iteration-count: 5;
+  }
+}

@@ -1,0 +1,15 @@
+@import "../../constants/app-constants";
+
+.message {
+  padding: 20px 0px;
+
+  .message__highlight {
+    &.message__highlight--color-one {
+      color: $color-one;
+    }
+
+    &.message__highlight--color-two {
+      color: $color-two;;
+    }
+  }
+}

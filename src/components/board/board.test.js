@@ -8,7 +8,7 @@ import Tile from "../tile/tile";
 describe('<Board></Board>', () => {
     it('renders children when passed in', () => {
         let tiles = [];
-        for (let index = FIRST_TILE_INDEX; index <= TOTAL_TILES_COUNT; index++) {
+        for (let index = FIRST_TILE_INDEX; index < TOTAL_TILES_COUNT; index++) {
             tiles.push(
                 <Tile
                     key={index}

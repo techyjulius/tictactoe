@@ -1,0 +1,12 @@
+.button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-weight: bold;
+  border: #39A4FF solid 1px;
+  border-radius: 3px;
+  outline: none;
+
+  &:focus {
+    border: #0000FF solid 1px;
+  }
+}

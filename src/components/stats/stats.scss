@@ -1,0 +1,28 @@
+@import "../../constants/app-constants";
+
+.stats {
+  display: flex;
+  flex-direction: row;
+  max-width: 390px;
+  padding: 20px 0px;
+  width: 100%;
+
+  .stats__inner-container {
+    width: 33%;
+    text-align: center;
+  }
+}
+
+.player {
+  font-size: 15px;
+  font-weight: bold;
+  padding-bottom: 5px;
+
+  &.player--color-one {
+    color: $color-one;
+  }
+
+  &.player--color-two {
+    color: $color-two;;
+  }
+}
