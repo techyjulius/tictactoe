@@ -1,12 +1,23 @@
-import {shallow} from "enzyme";
+import {mount, shallow} from "enzyme";
 import Message from './message';
 import {expect} from "chai";
 import React from "react";
+import {MESSAGE_TIE} from "../../constants/app-constants";
 
-describe('<Message></Message>', () => {
+export const message = {
+    type: MESSAGE_TIE,
+    data: {}
+}
+
+describe('<Message />', () => {
     it('renders children when passed in', () => {
-        const messageContent = <div>Message Content</div>;
-        const wrapper = shallow(<Message>{messageContent}</Message>);
-        expect(wrapper.contains(messageContent)).to.equal(true);
+        const messageContent = 'This game was a tie';
+        const wrapper = shallow(<Message details={message} />);
+        expect(wrapper.text()).to.contain(messageContent);
+    });
+
+    it('allows us to set props', () => {
+        const wrapper = mount(<Message details={message} />);
+        expect(wrapper.props().details).to.equal(message);
     });
 });
